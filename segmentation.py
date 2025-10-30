@@ -19,11 +19,11 @@ recency = st.number_input("Recency (days since last purchase)", min_value=0, max
 
 input_data = pd.DataFrame({
     'Age': [age],
-    'Annual Income': [income],
-    'Total Spending': [total_spending],
-    'Num Web Purchases': [num_web_puchases],
-    'Num Store Purchases': [num_store_purchases],
-    'Num Web Visits Month': [num_web_visits],
+    'Income': [income],
+    'Total_Spending': [total_spending],
+    'NumWebPurchases': [num_web_puchases],
+    'NumStorePurchases': [num_store_purchases],
+    'NumWebVisitsMonth': [num_web_visits],
     'Recency': [recency]
 })
 
