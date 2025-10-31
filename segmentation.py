@@ -34,11 +34,10 @@ if st.button("Predict Segment"):
     st.success(f"The predicted customer segment is: Cluster {cluster}")
     st.write("""
     Cluster Descriptions:
-    - Cluster 0: High-value customers with high income and spending.
-    - Cluster 1: Budget-conscious customers with moderate income and spending.  
-    - Cluster 2: Occasional shoppers with low income and spending.
-    - Cluster 3: Frequent shoppers with moderate income and high spending.
-    - Cluster 4: New customers with low spending and high recency.
-    - Cluster 5: Loyal customers with high spending and low recency.
-    - Cluster 6: Inactive customers with low spending and high recency.
+    - Cluster 0: Budget Buyers / Low income and low spending.
+    - Cluster 1: Premium Shoppers / High income and high spending.
+    - Cluster 2: Inactive Spenders / Spend little and rarely shop.
+    - Cluster 3: Loyal Customers / Rich and shop both online and in stores.
+    - Cluster 4: Regular Shoppers / Average income and spending.
+    - Cluster 5: Online Shoppers / Older people who buy mostly online.
          """)
