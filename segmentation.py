@@ -19,11 +19,11 @@ recency = st.number_input("Recency (days since last purchase)", min_value=0, max
 
 input_data = pd.DataFrame({
     'Age': [age],
-    'Annual Income': [income],
-    'Total Spending': [total_spending],
-    'Num Web Purchases': [num_web_puchases],
-    'Num Store Purchases': [num_store_purchases],
-    'Num Web Visits Month': [num_web_visits],
+    'Income': [income],
+    'Total_Spending': [total_spending],
+    'NumWebPurchases': [num_web_puchases],
+    'NumStorePurchases': [num_store_purchases],
+    'NumWebVisitsMonth': [num_web_visits],
     'Recency': [recency]
 })
 
@@ -34,11 +34,10 @@ if st.button("Predict Segment"):
     st.success(f"The predicted customer segment is: Cluster {cluster}")
     st.write("""
     Cluster Descriptions:
-    - Cluster 0: High-value customers with high income and spending.
-    - Cluster 1: Budget-conscious customers with moderate income and spending.  
-    - Cluster 2: Occasional shoppers with low income and spending.
-    - Cluster 3: Frequent shoppers with moderate income and high spending.
-    - Cluster 4: New customers with low spending and high recency.
-    - Cluster 5: Loyal customers with high spending and low recency.
-    - Cluster 6: Inactive customers with low spending and high recency.
+    - Cluster 0: Budget Buyers / Low income and low spending.
+    - Cluster 1: Premium Shoppers / High income and high spending.
+    - Cluster 2: Inactive Spenders / Spend little and rarely shop.
+    - Cluster 3: Loyal Customers / Rich and shop both online and in stores.
+    - Cluster 4: Regular Shoppers / Average income and spending.
+    - Cluster 5: Online Shoppers / Older people who buy mostly online.
          """)
